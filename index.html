@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    background: #f4f4f4;
     color: #333;
 }
 
@@ -23,9 +23,9 @@ header {
 
 /* NAV */
 nav {
-    background: #222;
     display: flex;
     justify-content: center;
+    background: #222;
     flex-wrap: wrap;
 }
 
@@ -47,7 +47,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 34px;
+    font-size: 32px;
     font-weight: bold;
     text-shadow: 0 2px 10px rgba(0,0,0,0.6);
 }
@@ -59,13 +59,13 @@ nav a:hover {
     padding: 40px;
 }
 
-.title {
+.section-title {
     font-size: 28px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-/* PROPERTY CARDS */
-.grid {
+/* PROPERTY GRID */
+.properties {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
@@ -88,21 +88,11 @@ nav a:hover {
     padding: 15px;
 }
 
-/* VIDEO SECTION */
-.video {
+/* VIDEO */
+.video-section {
     text-align: center;
-    background: white;
     padding: 50px 20px;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 18px;
-    background: #111;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
+    background: #fff;
 }
 
 /* CONTACT */
@@ -113,11 +103,22 @@ nav a:hover {
     padding: 40px;
 }
 
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 18px;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
 footer {
-    background: #222;
-    color: white;
     text-align: center;
     padding: 15px;
+    background: #222;
+    color: white;
 }
 </style>
 </head>
@@ -133,7 +134,7 @@ footer {
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#properties">Properties</a>
-    <a href="#tour">Tour</a>
+    <a href="#tour">Virtual Tour</a>
     <a href="#contact">Contact</a>
 </nav>
 
@@ -144,18 +145,18 @@ footer {
 
 <!-- ABOUT -->
 <section class="container" id="about">
-    <div class="title">About Us</div>
+    <div class="section-title">About Us</div>
     <p>
-        Mathison Rental Properties is committed to providing clean, comfortable, and reliable homes.
-        We make renting simple, transparent, and stress-free for every tenant.
+        Mathison Rental Properties provides clean, reliable, and comfortable homes.
+        We focus on making the rental process simple and stress-free for every tenant.
     </p>
 </section>
 
 <!-- PROPERTIES -->
 <section class="container" id="properties">
-    <div class="title">Available Properties</div>
+    <div class="section-title">Available Properties</div>
 
-    <div class="grid">
+    <div class="properties">
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be">
@@ -179,23 +180,22 @@ footer {
 </section>
 
 <!-- VIDEO TOUR -->
-<section class="video" id="tour">
+<section class="video-section" id="tour">
     <h2>Featured Property Tour</h2>
-    <p>Click below to view the full walkthrough</p>
+    <p>Explore this home in detail</p>
 
     <a class="button"
        href="https://book.boulevardrealestatemedia.com/sites/6714-gadwall-ln-orlando-fl-32810-20655740"
        target="_blank">
-       Watch Property Tour
+       Watch Full Tour
     </a>
 </section>
 
 <!-- CONTACT -->
 <section class="contact" id="contact">
-    <h2>Contact Mathison Rental Properties</h2>
-
+    <h2>Contact Us</h2>
     <p>Email: your@email.com</p>
-    <p>Phone: (your phone number)</p>
+    <p>Phone: (123) 456-7890</p>
 
     <a class="button" href="mailto:your@email.com">Email Us</a>
 </section>
